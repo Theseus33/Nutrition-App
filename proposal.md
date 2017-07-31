@@ -43,6 +43,6 @@ Once that step is reached I would like to set a goal for the day such as
 total of the items entered and see if you met your goal.
 
 ## Advanced Features
-Beyond that I would like to incorporate some way to show accountability
-like maybe incorporate a twitter api that would tweet out that you met 
-or stayed under/over you goal calories for the day.
+Beyond that I would like to utilize https://www.npmjs.com/package/twitter 
+incorporate some way to show accountability like maybe incorporate a twitter
+api that would tweet out that you met or stayed under/over you goal calories for the day.
