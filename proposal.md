@@ -20,6 +20,13 @@ is to be able to keep track of what you eat. With this app, you should be
 able to get the nutritional value of both groceries as well as restaurant
 items to keep track of what you eat.
 
+Minor upgrade to it would add a tracker which would calculate what you 
+added via foods to your daily intake total.
+
+Finally if I can get it working add twitter compatibility for accountability
+where it would tweet out USER--- reached their goal of 1700calories for the day
+or stayed under/ went over and now is fat. etc...
+
 ## Technologies Used
 
 html/ejs, node, express, mvc, sql/pg-promise, css, javascript/jquery
