@@ -17,4 +17,4 @@ nutriROutes.get('/:id', nutriController.show);
 nutriRoutes.put('/:id', nutriController.update);
 nutriRoutes.delete('/:id', nutriController.delete);
 
-module.exxports = nutriRoutes;
+module.exports = nutriRoutes;

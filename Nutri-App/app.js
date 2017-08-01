@@ -20,7 +20,7 @@ app.use(session({
   saveUninitialized: true,
 }));
 app.use(passport.initialize());
-app.use.(passport.session());
+app.use(passport.session());
 
 app.use(express.static('public'));
 
@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
   });
 });
 
-const nutriRoutes = require('./routes/nurti-routes');
+const nutriRoutes = require('./routes/nutri-routes');
 app.use('/auth', nutriRoutes);
 const userRoutes = require('./routes/user-routes');
 app.use('/user', userRoutes);
