@@ -6,7 +6,7 @@ const nutriController={}
 //the proper error will be listed in console for the following requests
 
 //render list of all Nutris from json data
-NutriController.index = (req, res) => {
+nutriController.index = (req, res) => {
   Nutri.findAll().then(nutri => {
     res.render('nutriList/nutri-index', {
       currentPage: 'index',
@@ -19,7 +19,7 @@ NutriController.index = (req, res) => {
   })
 };
 //render individual Nutris by requested id through json data
-NutriController.show = (req, res) => {
+nutriController.show = (req, res) => {
   Nutri.findById(req.params.id)
     .then(nutri => {
       res.render('nutriList/nutri-item', {
@@ -33,7 +33,7 @@ NutriController.show = (req, res) => {
     });
 };
 //create new Nutri by adding via provided parameters
-NutriController.create = (req, res) => {
+nutriController.create = (req, res) => {
   Nutri.create({
     title: req.body.title,
     category: req.body.category,
@@ -46,7 +46,7 @@ NutriController.create = (req, res) => {
   });
 };
 //change existing Nutri data by Setting to the database
-NutriController.update= (req, res) => {
+nutriController.update= (req, res) => {
   Nutri.update({
     title: req.body.title,
     category: req.body.category,
@@ -59,7 +59,7 @@ NutriController.update= (req, res) => {
   });
 };
 //edit Nutri
-NutriController.edit = (req, res) => {
+nutriController.edit = (req, res) => {
   Nutri.findById(req.params.id)
     .then((nutri) => {
       res.render('nutriList/nutri-edit', {
@@ -73,7 +73,7 @@ NutriController.edit = (req, res) => {
     });
 }
 //delete Nutri from database
-NutriController.delete = (req, res) => {
+nutriController.delete = (req, res) => {
   Nutri.destroy(req.params.id)
     .then(() => {
       res.redirect('/nutri');

@@ -3,7 +3,7 @@ const db = require('../db/config');
 //nutri as an empty object
 const Nutri = {};
 //returns all items from nutri column from database
-nutri.findAll = () => {
+Nutri.findAll = () => {
 return db.query('SELECT * FROM nutri');
 }
 //finds nutri by specified ID from database

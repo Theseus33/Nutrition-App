@@ -1,2 +1,2 @@
-\connect nutri_list_dev
+\connect nutrition
 \i nutri.sql;

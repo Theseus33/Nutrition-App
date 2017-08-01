@@ -1,16 +1,21 @@
---\connect todo_list_dev
+\connect nutrition
 
-INSERT INTO todo (item_name, brand_name, calories) VALUES
-  (
-    'Milk',
-    'Shopping',
-    'get 2% milk or fat free!'
-  ), (
-    'Build pizza app',
-    'Homework',
-    'create it from scratch!'
-  ), (
-    'Sleep',
-    'Health',
-    'catch some zs!'
-  );
+INSERT INTO nutri(item_name, brand_name, calories, total_fat, carbs)
+VALUES(
+  'Milk',
+  'Moo-Cow',
+  '20',
+  '5',
+  '2'
+), (
+  'flounder',
+  'found-your',
+  '120',
+  '15',
+  '113'
+), (
+  'Steak',
+  'Steeroids',
+  '220',
+  '35',
+  '143');
