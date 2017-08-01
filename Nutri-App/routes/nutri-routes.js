@@ -1,6 +1,6 @@
 const express = require('express');
-const todoRoutes = express.Router();
-const todoController = require('../controllers/nutri-controller');
+const nutriRoutes = express.Router();
+const nutriController = require('../controllers/nutri-controller');
 const authHelpers = require('../services/auth/auth-helpers');
 
 nutriRoutes.get('/', nutriController.index);
